@@ -1,3 +1,5 @@
+# 문자열 내 p와 y의 개수
+
 def solution(s):
     
     # 모두 소문자로 변환
@@ -15,5 +17,5 @@ def solution(s):
         return True
     else:
         return False
-
+    
 print(solution("Pyy"))
