@@ -18,4 +18,4 @@ def solution(priorities, location):
     print(answer)
     return 
 
-print(solution([2, 1, 3, 2],2))
+print(solution([2, 1, 3, 2],2))  
