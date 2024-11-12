@@ -17,4 +17,5 @@ while len(queue) > 1:
 # 마지막 카드 반영
 answer.append(queue.popleft())
 
-print(answer)
+for i in answer:
+    print(i, end=' ')
