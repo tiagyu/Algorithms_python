@@ -24,7 +24,7 @@ def solution2(n):
     return output
 
 # 다른 사람 풀이 2
-def solution(n):
+def solution3(n):
     answer = 0
     for i in range(1, n+1):
         cnt = 0
