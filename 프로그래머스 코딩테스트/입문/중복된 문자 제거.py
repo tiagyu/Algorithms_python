@@ -11,7 +11,7 @@ def solution2(my_string):
     return "".join(dict.fromkeys(my_string))
 
 # 다른 사람 풀이 2
-def solution2(my_string):
+def solution3(my_string):
     answer = []
     for i in my_string:
         if answer.count(i) == 0:
