@@ -12,6 +12,5 @@ def solution2(order):
 
 # 다른 사람 풀이 2
 def solution3(order):
-    answer = 0
     order = str(order)
     return order.count('3') + order.count('6') + order.count('9')
