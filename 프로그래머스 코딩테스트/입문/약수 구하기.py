@@ -1,6 +1,6 @@
 # 약수 구하기
 def solution(n):
-    answer = [aliquit for aliquit in range(1, n+1) if n % aliquit == 0]
+    answer = [aliquot for aliquot in range(1, n+1) if n % aliquot == 0]
     return answer
 
 # 다른 사람들 풀이
