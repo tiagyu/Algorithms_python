@@ -1,3 +1,4 @@
+# 연결 리스트
 def isPalindrome(ln):
     arr = []
     head = ln.head
@@ -17,3 +18,25 @@ def isPalindrome(ln):
             return False
 
     return True
+
+# 스택
+def test_problem_stack(s):
+    pair = {
+        '}': '{',
+        ')': '(',
+        ']': '[',
+    }
+    opener = "({["
+    stack = []
+
+    for char in s:
+        if char in opener:
+            stack.append(char)
+        else:
+            if not stack:
+                return False
+            top = stack.pop()
+            if pair[char] != top:
+                return False
+
+    return not stack
