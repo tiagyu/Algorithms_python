@@ -26,7 +26,7 @@ def solution1(board):
     n = len(board)
     danger = set()
     for i,row in enumerate(board):
-        for j,x in enumerate(board):
+        for j,x in enumerate(row):
             if not x:
                 continue
             danger.update((i+di, j+dj) for di in [-1,0,1] for dj in [-1,0,1])
