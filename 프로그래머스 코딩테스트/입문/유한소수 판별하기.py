@@ -41,4 +41,4 @@ def solution2(a,b):
         answer = 1
     else:
         answer = 2
-    return 2
+    return answer
