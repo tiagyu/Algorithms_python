@@ -1,8 +1,15 @@
 # 글자 이어 붙여 문자열 만들기
 def solution(my_string, index_list):
     answer = ''
+    for i in index_list:
+        letter = my_string[i]
+        answer += letter
     return answer
 
-my_string, index_list = "cvsgiorszzzmrpaqpe", [16, 6, 5, 3, 12, 14, 11, 11, 17, 12, 7]
+# 다른 사람 풀이1
+def solution1(my_string, index_list):
+    return "".join([my_string[idx] for idx in index_list])
 
-print(my_string.index('c'))
+# 다른 사람 풀이2
+def solution2(my_string, index_list):
+    return "".join(map(lambda x : my_string[x], index_list))
