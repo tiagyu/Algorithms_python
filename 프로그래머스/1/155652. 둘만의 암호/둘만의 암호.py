@@ -5,8 +5,6 @@ def solution(s, skip, index):
     for ch in skip:
         if ch in alphabet:
             alphabet.remove(ch)
-        
-    alphabet *= 2
 
     for ch in s:
         cur_idx = alphabet.index(ch)
