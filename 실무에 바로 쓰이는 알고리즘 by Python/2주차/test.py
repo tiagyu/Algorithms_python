@@ -1,5 +1,5 @@
-from structures import LinkedList, Stack
-from prac import isPalindrome, test_problem_stack
+from structures import LinkedList, Stack, Queue
+from prac import isPalindrome, test_problem_stack, test_problem_queue
 
 # 연결 리스트
 l1 = LinkedList()
@@ -40,3 +40,30 @@ assert not test_problem_stack("(]")
 assert not test_problem_stack("(()]")
 assert not test_problem_stack("(((])")
 assert not test_problem_stack("((())")
+
+# 큐
+def test_queue():
+    queue = Queue()
+
+    queue.push(1)
+    queue.push(2)
+    queue.push(3)
+    queue.push(4)
+    queue.push(5)
+
+    assert queue.pop() == 1
+    assert queue.pop() == 2
+    assert queue.pop() == 3
+    assert queue.pop() == 4
+    assert queue.pop() == 5
+    assert queue.pop() is None
+    assert queue.is_empty()
+    
+test_queue()
+
+assert test_problem_queue(2) == 2
+assert test_problem_queue(3) == 2
+assert test_problem_queue(4) == 4
+assert test_problem_queue(5) == 2
+assert test_problem_queue(6) == 4
+assert test_problem_queue(7) == 6
