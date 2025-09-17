@@ -21,6 +21,3 @@ def solution(genres, plays):
             answer.append(i)
 
     return answer
-
-print(solution(["classic", "pop", "classic", "classic", "pop"],
-               [500, 600, 150, 800, 2500]))
